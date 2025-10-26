@@ -9,8 +9,14 @@ Download code, install dependencies, and create STL terrain models.
 
     > git clone https://github.com/gecrooks/shapes2stl.git
     > cd shapes2stl
-    > pip install -r requirements.txt
-    > python -m shapes2stl
+    > uv sync
+    > uv run python -m shapes2stl
+
+If not already installed, uv can be installed with e.g. brew
+
+    > brew install uv
+
+After installation, re-run the `uv sync` and `uv run` commands above.
 
 
 Coordinates are taken from https://github.com/glotzerlab/coxeter/tree/master/coxeter/families/data
@@ -20,5 +26,3 @@ All solids are scaled to have the same volume as a 1 kg cube of tungsten (38mm (
 This was a warm up project to get the hang of generating STL files with python.
 
 Gavin Crooks (2023)
-
-

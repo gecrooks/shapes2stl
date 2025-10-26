@@ -1,0 +1,11 @@
+[project]
+name = "shapes2stl"
+version = "0.1.0"
+description = "Generate STL models of geometric solids as STL files."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "trimesh",
+]
+
